@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeActivity.AddRecipeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/add_recipe_context"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="8dp"
+            android:hint="内容" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+        <Button
+            android:id="@+id/add_recipe_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加食谱" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.semon.zhihuishu">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login.Login"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Login.Register"
+            android:label="用户注册" />
+        <activity
+            android:name=".Login.Resetpwd"
+            android:label="密码修改" />
+        <activity
+            android:name=".TeacherActivity.SetClassStarActivity"
+            android:label="设置班级之星" />
+        <activity
+            android:name=".Notice.NoticeActivity"
+            android:label="通知" />
+        <activity
+            android:name=".Notice.AddNoticeActivity"
+            android:label="添加通知" />
+        <activity android:name=".Notice.ViewNoticeActivity"
+            android:label="通知"/>
+        <activity android:name=".Login.ParentRegister"
+            android:label="家长注册"/>
+        <activity android:name=".Login.TeacherRegister"
+            android:label="老师注册"/>
+        <activity android:name=".Login.HeadmasterRegister"
+            android:label="园长注册"/>
+        <activity
+            android:name=".TeacherActivity.TeacherMainActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ParentActivity.ParentMainActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".MineActivity.MineActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".MineActivity.AboutUsActivity"
+            android:label="关于我们"></activity>
+
+
+        <activity
+            android:name=".Circle.CircleActivity"
+            android:label="班级动态"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".SignDate.SignDateMainActivity"
+            android:label="考勤" />
+        <activity android:name=".TeacherActivity.ParentsManageActivity"
+            android:label="家长管理"/>
+        <activity android:name=".TeacherActivity.ChildOpusActivity"
+            android:label="学生作品"/>
+
+        <activity android:name=".TeacherActivity.TeachPlanActivity"
+            android:label="教学计划"/>
+        <activity android:name=".TeacherActivity.AddTeachPlanActivity"
+            android:label="新增教学计划"/>
+        <activity
+            android:name=".DiscoveryActivity.DiscoveryActivity"
+            android:label="新发现"
+            android:launchMode="singleInstance" />
+        <activity android:name=".DiscoveryActivity.AddDiscoveryActivity"
+            android:label="添加新发现"/>
+        <activity android:name=".DiscoveryActivity.ViewDiscoveryActivity"
+            android:label="新发现"/>
+        <activity android:name=".TeacherActivity.ViewTeachPlanActivity"
+            android:label="教学计划" />
+        <activity
+            android:name=".MessageActivity.MessageActivity"
+            android:label="我的消息"
+            android:launchMode="singleInstance" />
+        <activity android:name=".MessageActivity.AddMessageActivity"
+            android:label="新增消息"/>
+        <activity android:name=".MessageActivity.ViewMessageActivity"
+            android:label="我的消息"/>
+        <activity
+            android:name=".TeacherActivity.ParentChildTaskActivity"
+            android:label="亲子任务"
+            android:launchMode="singleInstance" />
+        <activity android:name=".TeacherActivity.AddTaskActivity"
+            android:label="新增亲子任务"/>
+        <activity android:name=".TeacherActivity.ViewTaskActivity"
+            android:label="亲子任务"/>
+        <activity android:name=".TeacherActivity.ChildCommentActivity"
+            android:label="点评学生"/>
+        <activity android:name=".TeacherActivity.ViewChildCommentActivity"
+            android:label="学生表现"/>
+        <activity android:name=".TeacherActivity.AddChildCommentActivity"
+            android:label="新增点评学生"/>
+        <activity android:name=".HeadmasterActivity.SchoolActivity"
+            android:label="园所相关"/>
+        <activity android:name=".TeacherActivity.AddOpusActivity"
+            android:label="上传学生作品"/>
+        <activity android:name=".TeacherActivity.ViewOpusActivity"
+            android:label="学生作品"/>
+        <activity android:name=".Circle.AddCircleActivity"
+            android:label="班级动态"/>
+        <activity android:name=".RecipeActivity.RecipeActivity"
+            android:label="每日食谱" />
+        <activity android:name=".RecipeActivity.AddRecipeActivity"
+            android:label="新增每日食谱"/>
+        <activity android:name=".RecipeActivity.ViewRecipeActivity"
+            android:label="每日食谱"/>
+        <activity android:name=".HeadmasterActivity.HeadmasterMainActivity"/>
+        <activity android:name=".HeadmasterActivity.ClassManageActivity"
+            android:label="班级管理"/>
+        <activity android:name=".HeadmasterActivity.EditSchoolAboutActivity"/>
+
+
+    </application>
+
+</manifest>
